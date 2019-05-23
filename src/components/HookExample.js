@@ -32,7 +32,7 @@ useEffect(()=>{
     }
     // 
     count % 2 === 0 ?  hide(()=>displayOtherComponent=false) :  hide(()=>displayOtherComponent=true)
-},[count]); // <== we can specify re-run the Effect only if "count" change by passing an array in second argument;
+},[count]); //IMPORTANT: <== we can specify re-run the Effect only if "count" change by passing an array in second argument;
     
 
     return (

@@ -8,21 +8,23 @@
 
 import React, {Component} from 'react';
 import {Platform, StyleSheet, Text, View} from 'react-native';
-import HookExample from './src/components/HookExample';
-
+import HookExample from './src/components2/HookExample';
+import ClientStatusInfo from './src/components/ClientStatusInfo';
 
 export default class App extends Component<{}> {
   
   render() {
     return (
       <View style={styles.container}>
+
         <HookExample/>
+
+        {/*example extract responsability in hook */}
+        <ClientStatusInfo idClientConnected={134}/>
       </View>
     );
   }
 }
-
-
 
 const styles = StyleSheet.create({
   container: {

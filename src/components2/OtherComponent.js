@@ -2,8 +2,8 @@ import React,{useState,useEffect} from 'react'
 import { View, Text, TouchableOpacity } from 'react-native'
 
 const OtherComponent = (props) => {
-    let [name, pluralizeName] = useState("bouliche");
-    let [age, setAge] = useState(33);
+    const [name, pluralizeName] = useState("bouliche");
+    const [age, setAge] = useState(33);
 
     const pluralize = () => {
         pluralizeName(()=> { //NOTE:  pluralizeName() is function of useState()
@@ -19,7 +19,7 @@ const OtherComponent = (props) => {
     const incrementAge = () => {
         setAge(()=>{        // NOTE: setage() is function of useState()
                     if(age < 50){
-                    return  age = age + 10;
+                    return age + 10;
                     }
                     return age;
         });

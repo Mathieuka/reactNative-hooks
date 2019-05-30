@@ -1,6 +1,7 @@
 import React,{useState} from 'react';
 import {View,Text,TextInput} from 'react-native';
 import lengthInput from '../customHook/lengthInput'; 
+
 const TextInput1 = () => {
     const [inputValue,setInput] = useState('');
     const lengthOfInput = lengthInput(inputValue).toString();
